@@ -1,18 +1,16 @@
 <div align="center">
 
-    # Apollo: An Exploration of Video Understanding in Large Multimodal Models
+# Apollo: An Exploration of Video Understanding in Large Multimodal Models
 
 <p align="center">
-    <img src="assets/icon.png" width="150" style="margin-bottom: 0.2;"/>
+    <img src="assets/icon.jpg" width="150" style="margin-bottom: 0.2;"/>
 <p>
 
 
 
-[\[📄 Report\]](https://arxiv.org/abs/XXXX.XXXXX)  
-[\[🤗 Hugging Face\]](https://huggingface.co/Apollo-LMMs)  
-[\[🤖 Chat Demo\]](https://huggingface.co/spaces/Apollo-LMMs/Apollo-3B)  
-[\[🏆 Leaderboard\]](https://huggingface.co/spaces/Apollo-LMMs/ApolloBench)  
+[\[📄 Report\]](https://arxiv.org/abs/XXXX.XXXXX) [\[🤗 Hugging Face\]](https://huggingface.co/Apollo-LMMs) [\[🤖 Chat Demo\]](https://huggingface.co/spaces/Apollo-LMMs/Apollo-3B) [\[🏆 Leaderboard\]](https://huggingface.co/spaces/Apollo-LMMs/ApolloBench)  
 
+</div>
 
 
 
