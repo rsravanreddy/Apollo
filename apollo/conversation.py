@@ -535,7 +535,7 @@ conv_templates = {
 
     "llama_3": llama_3_chat,
     "qwen_1_5": conv_qwen,
-    "qwen_2": conv_qwen_2,
+    "qwen_2": conv_qwen,
     "gemma_instruct": conv_gemma_instruct,
 }
 
