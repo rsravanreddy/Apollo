@@ -7,8 +7,22 @@
 <p>
 
 
-
-[\[📄 Report\]](https://arxiv.org/abs/XXXX.XXXXX) [\[🤗 Hugging Face\]](https://huggingface.co/Apollo-LMMs) [\[🤖 Chat Demo\]](https://huggingface.co/spaces/Apollo-LMMs/Apollo-3B) [\[🏆 Leaderboard\]](https://huggingface.co/spaces/Apollo-LMMs/ApolloBench)  
+<a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank">
+    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-Apollo-red?logo=arxiv&style=for-the-badge" height="25" />
+</a>
+<a href="https://apollo-lmms.github.io" target="_blank">
+    <img alt="Website" src="https://img.shields.io/badge/🌎_Website-apollo--lmms.github.io-blue.svg?style=for-the-badge" height="25" />
+</a>
+<br>
+<a href="https://huggingface.co/Apollo-LMMs" target="_blank">
+    <img alt="HF Model: Apollo-LMMs" src="https://img.shields.io/badge/%F0%9F%A4%97%20Model-Apollo--LMMs-ffc107?color=ffc107&logoColor=white&style=for-the-badge" height="25" />
+</a>
+<a href="https://huggingface.co/spaces/Apollo-LMMs/Apollo-3B" target="_blank">
+    <img alt="HF Demo: Apollo-3B" src="https://img.shields.io/badge/%F0%9F%A4%97%20Demo-Apollo--3B-ffc107?color=ffc107&logoColor=white&style=for-the-badge" height="25" />
+</a>
+<a href="https://huggingface.co/spaces/Apollo-LMMs/ApolloBench" target="_blank">
+    <img alt="HF Leaderboard: ApolloBench" src="https://img.shields.io/badge/%F0%9F%A4%97%20Leaderboard-ApolloBench-ffc107?color=ffc107&logoColor=white&style=for-the-badge" height="25" />
+</a>
 
 </div>
 
