@@ -7,7 +7,7 @@
 <p>
 
 
-<a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank">
+<a href="https://arxiv.org/abs/2412.10360" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-Apollo-red?logo=arxiv&style=for-the-badge" height="25" />
 </a>
 <a href="https://apollo-lmms.github.io" target="_blank">
@@ -141,12 +141,10 @@ print(pred)
 
 If you find Apollo useful in your research, please cite:
 ```bibtex
-@misc{zohar2024apollo,
-  title={Apollo: An Exploration of Video Understanding in Large Multimodal Models},
-  author={Zohar, Orr and Wang, Xiaohan and Dubois, Yann and Mehta, Nikhil and Xiao, Tong and Hansen-Estruch, Philippe and Yu, Licheng and Wang, Xiaofang and Juefei-Xu, Felix and Zhang, Ning and Yeung-Levy, Serena and Xia, Xide},
-  year={2024},
-  eprint={xxx/xxxxxx},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
+@article{apollo,
+    title={Apollo: An Exploration of Video Understanding in Large Multimodal Models},
+    author={Orr Zohar, Xiaohan Wang, Yann Dubois, Nikhil Mehta, Tong Xiao, Philippe Hansen-Estruch, Licheng Yu, Xiaofang Wang, Felix Juefei-Xu, Ning Zhang, Serena Yeung-Levy, and Xide Xia},
+    journal={arXiv preprint arXiv:2412.10360},
+    year={2024}
 }
 ```
