@@ -137,15 +137,15 @@ print(pred)
 - **(Coming soon..)** We will provide examples and documentation on how to apply low-rank adaptation (LoRA) and other parameter-efficient fine-tuning techniques to Apollo.
 
 ## Related Work
-If you find Apollo interesting, you can check out our groups related works:
-* [Video-STaR](https://github.com/orrzohar/Video-STaR)
-* [VideoAgent](https://github.com/wxh1996/VideoAgent)
+If you find Apollo interesting, you can check out our groups' related works in video understanding:
+* [Video-STaR](https://github.com/orrzohar/Video-STaR): the first approach for Video-LMM self-training, which generates CoT QA pairs from video metadata via back-rationalization, direct generat
+* [VideoAgent](https://github.com/wxh1996/VideoAgent): the first agentic long-form video understanding system that allows LLM to interact with videos and decide where to look iteratively.
 
 ## Citation
 
 If you find Apollo useful in your research, please cite:
 ```bibtex
-@article{apollo,
+@article{zohar2024apollo,
     title={Apollo: An Exploration of Video Understanding in Large Multimodal Models},
     author={Orr Zohar, Xiaohan Wang, Yann Dubois, Nikhil Mehta, Tong Xiao, Philippe Hansen-Estruch, Licheng Yu, Xiaofang Wang, Felix Juefei-Xu, Ning Zhang, Serena Yeung-Levy, and Xide Xia},
     journal={arXiv preprint arXiv:2412.10360},
