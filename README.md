@@ -136,6 +136,10 @@ print(pred)
 ### PEFT (Parameter-Efficient Fine-Tuning)
 - **(Coming soon..)** We will provide examples and documentation on how to apply low-rank adaptation (LoRA) and other parameter-efficient fine-tuning techniques to Apollo.
 
+## Related Work
+If you find Apollo interesting, you can check out our groups related works:
+* [Video-STaR](https://github.com/orrzohar/Video-STaR)
+* [VideoAgent](https://github.com/wxh1996/VideoAgent)
 
 ## Citation
 
