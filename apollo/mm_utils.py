@@ -52,7 +52,6 @@ def read_video_decord(video_file, all_indices):
     vr = VideoReader(video_file, num_threads=1, ctx=cpu(0))
     return vr.get_batch(all_indices).asnumpy()
 
-
 def read_video_decord_eval(video_file, all_indices):
     vr = VideoReader(video_file)
     return vr.get_batch(all_indices).asnumpy()
@@ -100,7 +99,6 @@ def pad_to_center_square(frames, mean_values):
     padded_frames[:, top:top + height, left:left + width, :] = frames
     return padded_frames
 
-
 def expand2square(pil_img, background_color):
     width, height = pil_img.size
     if width == height:
@@ -115,7 +113,6 @@ def expand2square(pil_img, background_color):
         result.paste(pil_img, ((height - width) // 2, 0))
         # result.paste(pil_img, (0, 0))
         return result
-
 
 def calculate_sample_indices(clip_duration, frames_per_clip, total_frames, original_fps, video_duration, clip_sampling_ratio=1):
     sample_video_fps = frames_per_clip / clip_duration
@@ -191,35 +188,6 @@ def calculate_sample_indices(clip_duration, frames_per_clip, total_frames, origi
 
     return clip_indices, all_indices, timestamps
 
-def calculate_sample_indices_uniform(frames_per_clip, total_frames, uniform_frame_count, original_fps):
-
-    # Generate indices
-    if total_frames >= N:
-        # Sample N frames uniformly without replacement
-        indices = np.linspace(0, total_frames - 1, N, dtype=int)
-    else:
-        # Not enough frames; repeat frames to reach N frames
-        repeats = math.ceil(N / total_frames)
-        base_indices = np.arange(total_frames)
-        indices = np.tile(base_indices, repeats)[:N]
-
-    # Split indices into clips
-    clip_indices = [
-        indices[i * frames_per_clip: (i + 1) * frames_per_clip]
-        for i in range(num_clips)
-    ]
-
-    # Calculate timestamps for each clip
-    timestamps = []
-    for clip in clip_indices:
-        start_time = clip[0] / original_fps
-        end_time = clip[-1] / original_fps
-        timestamps.append((start_time, end_time))
-
-    all_indices = indices.tolist()
-    return clip_indices, all_indices, timestamps
-
-
 def get_video_details(fname):
     """ Load video content using Decord """
     assert os.path.exists(fname), f'video path not found {fname}'
@@ -231,7 +199,6 @@ def get_video_details(fname):
     original_fps = vr.get_avg_fps()
     video_duration = total_frames / original_fps
     return total_frames, original_fps, video_duration
-
 
 def get_video_details_cv2(fname):
     """
@@ -278,8 +245,6 @@ def get_video_details_cv2(fname):
     cap.release()
     
     return total_frames, original_fps, video_duration
-
-
     
 def split_into_clips(video, frames_per_clip):
     """ Split video into a list of clips """
@@ -327,15 +292,6 @@ def load_video(video_file, vision_processors, clip_duration, frames_per_clip, cl
     buffer = load_frames_from_video(video_file, all_indices, video_decode_backend, eval_)
     mm_data = process_video(vision_processors, frames_per_clip, buffer)
     return mm_data, timestamps
-
-def load_video_uniform(video_file, vision_processors, clip_duration, frames_per_clip, clip_sampling_ratio=1, video_decode_backend='decord', eval_=False, uniform_sampling=8):
-    total_frames, original_fps, video_duration = get_video_details(video_file)
-    all_indices = np.linspace(0, total_frames-1, uniform_sampling, dtype=int)
-    print('using uniform frame sampled, sampled: ', len(all_indices), ' frames')
-    buffer = load_frames_from_video(video_file, all_indices, video_decode_backend, eval_)
-    mm_data = process_video(vision_processors, frames_per_clip, buffer)
-    return mm_data, []
-
 
 
 class ApolloMMLoader:
