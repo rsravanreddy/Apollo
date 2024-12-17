@@ -312,7 +312,7 @@ conv_qwen_2 = Conversation(
 )
 
 
-default_conversation = conv_plain
+default_conversation = conv_qwen
 conv_templates = {
     "qwen_1_5": conv_qwen,
     "qwen_2": conv_qwen
